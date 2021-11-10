@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>JavaScript Video Controls</title>
 	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<script src="js/video.js" defer></script>
 </head>
 <body> 
 <main>
@@ -23,12 +24,13 @@
 			width="640" 
 			height="360" 
 			id="player1" 
-			preload="none"
-			src="assets/marchingband.mov" />
-			  
+			preload="none">
+			<source src="assets/marchingband.mov">
+		
 		    <track src="captions_en.vtt" kind="captions" srclang="en" label="english_captions">	
 		  		Your browser does not support HTML5 video.
 		</video>
+		
 		<figcaption>[The Michigan Marching Band]</figcaption>
 		</figure> 
 	<button id="mute">Mute</button><br>
