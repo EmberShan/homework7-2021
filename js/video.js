@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
 });
 
 document.querySelector('#play').addEventListener("click", function() {
-	document.querySelector('#volume').innerHTML = '100%';
+	document.querySelector('#volume').innerHTML = (video.volume*100).toString() + '%';
 	console.log("Play Video");
 	video.play();
 });
@@ -54,7 +54,7 @@ document.querySelector('#mute').addEventListener("click", function() {
 slider.addEventListener("change", function() {
 	// console.log("Slider changed");
 	video.volume = slider.value / 100;
-	document.querySelector('#volume').innerHTML = video.volume*100 + '%';
+	document.querySelector('#volume').innerHTML = (video.volume*100).toString() + '%';
 	console.log(video.volume);
 });
 
